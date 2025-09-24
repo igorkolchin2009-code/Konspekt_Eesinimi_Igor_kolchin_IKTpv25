@@ -147,6 +147,33 @@ namespace Minekonspekt
             {
                 Console.WriteLine("Parool on vale, proovi uuesti");
             }
+
+            //5 värvituvastus
+            Console.WriteLine("Milline värv sille kõige rohkem meeldib");
+            string favouriteColur = Console.ReadLine();
+            if (favouriteColur == "panane") ;
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+
+            }
+            if (favouriteColur == "oranz") ;
+            {
+                Console.WriteLine("Kahjuks oranzo ei ole");
+            }
+            if (favouriteColur == "kollane") ;
+            {
+                Console.BackgroundColor = ConsoleColor.Yellow;
+            }
+
+            if (favouriteColur == "rohaline") ;
+            {
+                Console.BackgroundColor = ConsoleColor.Green;
+            }
+            else
+            {
+                Console.WriteLine("Värvi ei tunne");
+            }
+            Console.WriteLine("Värv muudetud!");
         }
 
     } 
