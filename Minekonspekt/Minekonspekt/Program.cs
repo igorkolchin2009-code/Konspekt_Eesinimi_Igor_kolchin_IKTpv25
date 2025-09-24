@@ -85,6 +85,42 @@ namespace Minekonspekt
             {
                 Console.WriteLine("pikkust ei tunta");
             }
+
+
+
         }
+
     } 
 }
+
+// + liitmine
+Console.WriteLine("Tere. Sisesta esimene arv");
+int arv1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Tere. Sisesta teine arv");
+int arv2 = int.Parse(Console.ReadLine());
+Console.WriteLine("Sisesta tehtemärk: / * + -");
+string tehteyyp = Console.ReadLine();
+
+int tulemus = 0;
+if (tehteyyp == "+")
+{
+    tulemus = arv1 + arv2;
+
+}
+if (tehteyyp == "-")
+{
+    tulemus = arv1 - arv2;
+
+}
+if (tehteyyp == "/")
+{
+    tulemus = arv1 / arv2;
+
+}
+if (tehteyyp == "*")
+{
+    tulemus = arv1 * arv2;
+
+}
+
+Console.WriteLine(tulemus);
