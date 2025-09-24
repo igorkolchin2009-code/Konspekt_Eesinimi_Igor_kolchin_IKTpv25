@@ -1,0 +1,2 @@
+# Konspekt_Eesinimi_Igor_kolchin_IKTpv25
+Mine konspekt
