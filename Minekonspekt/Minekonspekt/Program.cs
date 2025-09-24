@@ -98,29 +98,57 @@ namespace Minekonspekt
                 tulemus = arv1 + arv2;
 
             }
-            if (tehteyyp == "-")
+            else if (tehteyyp == "-")
             {
                 tulemus = arv1 - arv2;
 
             }
-            if (tehteyyp == "/")
+            else if (tehteyyp == "/")
             {
                 tulemus = arv1 / arv2;
 
             }
-            if (tehteyyp == "*")
+            else if (tehteyyp == "*")
             {
                 tulemus = arv1 * arv2;
 
             }
+            else if (tehteyyp == "*")
+            {
+                tulemus = (int)Math.Pow(arv1, arv2);
 
-            Console.WriteLine(tulemus);
+            }
+            else
+            {
+                Console.WriteLine("Palun siseta teha, mida kalkulaator oskab");
+            }
+            if (tulemus != 0)
+            {
+                Console.WriteLine(tulemus);
+            }
+            else
+            {
+                Console.WriteLine("Tulemus on 0, või üritasid teha tehat, mida kalkulaatot ei tunne");
+            }
 
+            //4 parool, if string andmetüüp
+            Console.WriteLine("Proogrami edasi tõõks siseta palun paarool");
+            string password = Console.ReadLine();
 
-
+            if ( password == "simsalabin")
+            {
+                Console.WriteLine("Parrol on õige aarete lages avaneb");
+            }
+            else if (password == "saatana" || password == "1234")
+            {
+                 Console.WriteLine("Parool on subimatu, palun mingi muu");
+            }
+            else
+            {
+                Console.WriteLine("Parool on vale, proovi uuesti");
+            }
         }
 
     } 
 }
 
-// + liitmine
