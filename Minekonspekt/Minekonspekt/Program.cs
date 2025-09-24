@@ -151,21 +151,21 @@ namespace Minekonspekt
             //5 värvituvastus
             Console.WriteLine("Milline värv sille kõige rohkem meeldib");
             string favouriteColur = Console.ReadLine();
-            if (favouriteColur == "panane") ;
+            if (favouriteColur == "panane") 
             {
                 Console.BackgroundColor = ConsoleColor.Red;
 
             }
-            if (favouriteColur == "oranz") ;
+            if (favouriteColur == "oranz") 
             {
                 Console.WriteLine("Kahjuks oranzo ei ole");
             }
-            if (favouriteColur == "kollane") ;
+            if (favouriteColur == "kollane") 
             {
                 Console.BackgroundColor = ConsoleColor.Yellow;
             }
 
-            if (favouriteColur == "rohaline") ;
+            if (favouriteColur == "rohaline") 
             {
                 Console.BackgroundColor = ConsoleColor.Green;
             }
