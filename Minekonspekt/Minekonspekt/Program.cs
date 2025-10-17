@@ -13,25 +13,25 @@ namespace Minekonspekt
             //Muutajad, matemaatilised tehted, if esle if esle:
 
             //1. tuvasta sisu võrdluses tühja strinhiga, string andmetüüp
-            Console.WriteLine("Tere kasutaja, mis on simu nimi");
-            string nimi = Console.ReadLine();
+            //Console.WriteLine("Tere kasutaja, mis on simu nimi");
+            //string nimi = Console.ReadLine();
 
-            if (nimi == null)
-            {
-                Console.WriteLine("kasutaja ei sisetanud oma nime");
-            }
-            else if (nimi != "")
-            {
-                Console.WriteLine("Tere " + nimi + "!");
-            }
-            else
-            {
-                Console.WriteLine("kasutaja ei sisetanud oma nime");
-            }
+            //if (nimi == null)
+            //{
+            //    Console.WriteLine("kasutaja ei sisetanud oma nime");
+            //}
+            //else if (nimi != "")
+            //{
+            //    Console.WriteLine("Tere " + nimi + "!");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("kasutaja ei sisetanud oma nime");
+            //}
 
             //2.tuvasta arvuvagemik, võrdluses piirväärtustega, int/double/flout andmetüüp
-            Console.WriteLine(nimi + ", mis on sinu vanus?: ");
-            int kasutajavanus = int.Parse(Console.ReadLine());
+            //Console.WriteLine(nimi + ", mis on sinu vanus?: ");
+            //int kasutajavanus = int.Parse(Console.ReadLine());
 
             //2.1 mitu tingimust pesastatud if-ide abil
             //if (kasutajavanus > 0)
@@ -47,134 +47,134 @@ namespace Minekonspekt
             //}
 
             //2.2 mitu tingimust ühe ifi sees kasutades loogilist tehet "and", välitides pesastamist
-            if (kasutajavanus > 0 && kasutajavanus < 18)
-            {
-                Console.WriteLine("kahjuks energiajooki sulle ei müüda, oled Monsterist ilma 😒");
-            }
-            else
-            {
-                Console.WriteLine("Saad osta Monsterit, Yeppie");
-            }
-            //2.3 mitu vahemikku, if-elseif abil, doble/flout
-            Console.WriteLine("sisesta oma piku ka , palun," + nimi + ":");
-            double pikkus = double.Parse(Console.ReadLine());
-            if (pikkus < 1.00d)
-            {
-                Console.WriteLine("oled jutsu");
-            }
-            else if (pikkus <1.25d && pikkus > 1.00d)
-            {
-                Console.WriteLine("oled paaegu allmeetrimees");
-            }
-            else if (pikkus <1.50d && pikkus >1.25d)
-            {
-                Console.WriteLine("Oioi, päkapikk enam ei ilegi" + nimi + "!");
-            }
-            else if (pikkus < 1.750d && pikkus > 1.5d)
-            {
-                Console.WriteLine("Oioi enamasti standardpikkuses, kui mitte just natuke lühike");
-            }
-            else if (pikkus < 2.00d && pikkus > 1.75d)
-            {
-                Console.WriteLine("Pikk kolge, vaata et sa pead vastu uksepiita ära ei löö");
-            }
-            else if (pikkus > 2.00d)
-            {
-                Console.WriteLine("Täielik tulnukas, pildev välja näevad?");
-            }
-            else
-            {
-                Console.WriteLine("pikkust ei tunta");
-            }
-            Console.WriteLine("Tere. Sisesta esimene arv");
-            int arv1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Tere. Sisesta teine arv");
-            int arv2 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Sisesta tehtemärk: / * + -");
-            string tehteyyp = Console.ReadLine();
+            //if (kasutajavanus > 0 && kasutajavanus < 18)
+            //{
+            //    Console.WriteLine("kahjuks energiajooki sulle ei müüda, oled Monsterist ilma 😒");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Saad osta Monsterit, Yeppie");
+            //}
+            ////2.3 mitu vahemikku, if-elseif abil, doble/flout
+            //Console.WriteLine("sisesta oma piku ka , palun," + nimi + ":");
+            //double pikkus = double.Parse(Console.ReadLine());
+            //if (pikkus < 1.00d)
+            //{
+            //    Console.WriteLine("oled jutsu");
+            //}
+            //else if (pikkus <1.25d && pikkus > 1.00d)
+            //{
+            //    Console.WriteLine("oled paaegu allmeetrimees");
+            //}
+            //else if (pikkus <1.50d && pikkus >1.25d)
+            //{
+            //    Console.WriteLine("Oioi, päkapikk enam ei ilegi" + nimi + "!");
+            //}
+            //else if (pikkus < 1.750d && pikkus > 1.5d)
+            //{
+            //    Console.WriteLine("Oioi enamasti standardpikkuses, kui mitte just natuke lühike");
+            //}
+            //else if (pikkus < 2.00d && pikkus > 1.75d)
+            //{
+            //    Console.WriteLine("Pikk kolge, vaata et sa pead vastu uksepiita ära ei löö");
+            //}
+            //else if (pikkus > 2.00d)
+            //{
+            //    Console.WriteLine("Täielik tulnukas, pildev välja näevad?");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("pikkust ei tunta");
+            //}
+            //Console.WriteLine("Tere. Sisesta esimene arv");
+            //int arv1 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Tere. Sisesta teine arv");
+            //int arv2 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Sisesta tehtemärk: / * + -");
+            //string tehteyyp = Console.ReadLine();
 
-            int tulemus = 0;
-            if (tehteyyp == "+")
-            {
-                tulemus = arv1 + arv2;
+            //int tulemus = 0;
+            //if (tehteyyp == "+")
+            //{
+            //    tulemus = arv1 + arv2;
 
-            }
-            else if (tehteyyp == "-")
-            {
-                tulemus = arv1 - arv2;
+            //}
+            //else if (tehteyyp == "-")
+            //{
+            //    tulemus = arv1 - arv2;
 
-            }
-            else if (tehteyyp == "/")
-            {
-                tulemus = arv1 / arv2;
+            //}
+            //else if (tehteyyp == "/")
+            //{
+            //    tulemus = arv1 / arv2;
 
-            }
-            else if (tehteyyp == "*")
-            {
-                tulemus = arv1 * arv2;
+            //}
+            //else if (tehteyyp == "*")
+            //{
+            //    tulemus = arv1 * arv2;
 
-            }
-            else if (tehteyyp == "*")
-            {
-                tulemus = (int)Math.Pow(arv1, arv2);
+            //}
+            //else if (tehteyyp == "*")
+            //{
+            //    tulemus = (int)Math.Pow(arv1, arv2);
 
-            }
-            else
-            {
-                Console.WriteLine("Palun siseta teha, mida kalkulaator oskab");
-            }
-            if (tulemus != 0)
-            {
-                Console.WriteLine(tulemus);
-            }
-            else
-            {
-                Console.WriteLine("Tulemus on 0, või üritasid teha tehat, mida kalkulaatot ei tunne");
-            }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Palun siseta teha, mida kalkulaator oskab");
+            //}
+            //if (tulemus != 0)
+            //{
+            //    Console.WriteLine(tulemus);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Tulemus on 0, või üritasid teha tehat, mida kalkulaatot ei tunne");
+            //}
 
-            //4 parool, if string andmetüüp
-            Console.WriteLine("Proogrami edasi tõõks siseta palun paarool");
-            string password = Console.ReadLine();
+            ////4 parool, if string andmetüüp
+            //Console.WriteLine("Proogrami edasi tõõks siseta palun paarool");
+            //string password = Console.ReadLine();
 
-            if ( password == "simsalabin")
-            {
-                Console.WriteLine("Parrol on õige aarete lages avaneb");
-            }
-            else if (password == "saatana" || password == "1234")
-            {
-                 Console.WriteLine("Parool on subimatu, palun mingi muu");
-            }
-            else
-            {
-                Console.WriteLine("Parool on vale, proovi uuesti");
-            }
+            //if ( password == "simsalabin")
+            //{
+            //    Console.WriteLine("Parrol on õige aarete lages avaneb");
+            //}
+            //else if (password == "saatana" || password == "1234")
+            //{
+            //     Console.WriteLine("Parool on subimatu, palun mingi muu");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Parool on vale, proovi uuesti");
+            //}
 
-            //5 värvituvastus
-            Console.WriteLine("Milline värv sille kõige rohkem meeldib");
-            string favouriteColur = Console.ReadLine();
-            if (favouriteColur == "panane") 
-            {
-                Console.BackgroundColor = ConsoleColor.Red;
+            ////5 värvituvastus
+            //Console.WriteLine("Milline värv sille kõige rohkem meeldib");
+            //string favouriteColur = Console.ReadLine();
+            //if (favouriteColur == "panane") 
+            //{
+            //    Console.BackgroundColor = ConsoleColor.Red;
 
-            }
-            if (favouriteColur == "oranz") 
-            {
-                Console.WriteLine("Kahjuks oranzo ei ole");
-            }
-            if (favouriteColur == "kollane") 
-            {
-                Console.BackgroundColor = ConsoleColor.Yellow;
-            }
+            //}
+            //if (favouriteColur == "oranz") 
+            //{
+            //    Console.WriteLine("Kahjuks oranzo ei ole");
+            //}
+            //if (favouriteColur == "kollane") 
+            //{
+            //    Console.BackgroundColor = ConsoleColor.Yellow;
+            //}
 
-            if (favouriteColur == "rohaline") 
-            {
-                Console.BackgroundColor = ConsoleColor.Green;
-            }
-            else
-            {
-                Console.WriteLine("Värvi ei tunne");
-            }
-            Console.WriteLine("Värv muudetud!");
+            //if (favouriteColur == "rohaline") 
+            //{
+            //    Console.BackgroundColor = ConsoleColor.Green;
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Värvi ei tunne");
+            //}
+            //Console.WriteLine("Värv muudetud!");
 
             
             //# Калькулятор грузчика - Напишите программу, которая:
@@ -194,47 +194,47 @@ namespace Minekonspekt
             //# - - - - - высота коробки
             //# - - вычисляет общую площадь коробки, объем и самую длинную сквозную линию (d)
 
-            Console.WriteLine("Küsib kasutajalt kas ta tahab ära mõõta pappkasti või õlitünni.");
-            string Kolijakalkulaato = Console.ReadLine();
+            //Console.WriteLine("Küsib kasutajalt kas ta tahab ära mõõta pappkasti või õlitünni.");
+            //string Kolijakalkulaato = Console.ReadLine();
 
 
-            if (Kolijakalkulaato == "tünni")
-            {
-                Console.WriteLine("kas sa tead tüüni raadiust R või läbimõõtu D");
-                string rvõid = Console.ReadLine();
-                Console.WriteLine("mis on selle raadius/läbimõõte? meetrirtes");
-                double kasutajamõõt = double.Parse(Console.ReadLine());
-                Console.WriteLine("Kui kõtge on su tünni? meetriss");
-                double kõrgus = double.Parse(Console.ReadLine());
+            //if (Kolijakalkulaato == "tünni")
+            //{
+            //    Console.WriteLine("kas sa tead tüüni raadiust R või läbimõõtu D");
+            //    string rvõid = Console.ReadLine();
+            //    Console.WriteLine("mis on selle raadius/läbimõõte? meetrirtes");
+            //    double kasutajamõõt = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Kui kõtge on su tünni? meetriss");
+            //    double kõrgus = double.Parse(Console.ReadLine());
 
-                Console.WriteLine("Kui paks on su tünni? meetriss");
-                double kaanepaks = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Kui paks on su tünni? meetriss");
+            //    double kaanepaks = double.Parse(Console.ReadLine());
 
-                double Sp = 0;
-                if (rvõid == "R")
-                {
-                    Sp = Math.PI * (kasutajamõõt * kasutajamõõt);
-                }
-                else if (rvõid =="D")
-                {
-                    kasutajamõõt = kasutajamõõt / 2;
-                    Sp = Math.PI * (kasutajamõõt * kasutajamõõt) / 2;
-                }    
-                double V = 0;
-                kõrgus = kõrgus - kaanepaks;
-                V = Sp * kõrgus;
-                //Tünni ruumalu on olemas. arvutame küjepindala
-                kõrgus += kaanepaks;
-                double Sk = 2 * Math.PI * kasutajamõõt *kõrgus;
-                //Tünni küljepindala on olemas. arvutame tünni kogupindala
-                double S = Sp + Sk;
-                Console.WriteLine($"sinu tüün mahutab {V}\nTünni küljindala on{Sk}\nTünni kogupindala on{S}");
-            }
+            //    double Sp = 0;
+            //    if (rvõid == "R")
+            //    {
+            //        Sp = Math.PI * (kasutajamõõt * kasutajamõõt);
+            //    }
+            //    else if (rvõid =="D")
+            //    {
+            //        kasutajamõõt = kasutajamõõt / 2;
+            //        Sp = Math.PI * (kasutajamõõt * kasutajamõõt) / 2;
+            //    }    
+            //    double V = 0;
+            //    kõrgus = kõrgus - kaanepaks;
+            //    V = Sp * kõrgus;
+            //    //Tünni ruumalu on olemas. arvutame küjepindala
+            //    kõrgus += kaanepaks;
+            //    double Sk = 2 * Math.PI * kasutajamõõt *kõrgus;
+            //    //Tünni küljepindala on olemas. arvutame tünni kogupindala
+            //    double S = Sp + Sk;
+            //    Console.WriteLine($"sinu tüün mahutab {V}\nTünni küljindala on{Sk}\nTünni kogupindala on{S}");
+            //}
 
-            else if (Kolijakalkulaato == "kasti")
-            {
-                Console.WriteLine("Kas kast on kuubiku kujuline või risttahuka kujuline.");
-            }
+            //else if (Kolijakalkulaato == "kasti")
+            //{
+            //    Console.WriteLine("Kas kast on kuubiku kujuline või risttahuka kujuline.");
+            //}
 
 
 
@@ -380,50 +380,72 @@ namespace Minekonspekt
             //    Console.WriteLine("Tulemus on 0, või üritasid teha tehat, mida kalkulaatot ei tunne");
             //}
 
-            //string kasutajaNimi = "";
+            Console.WriteLine("Sisesta ostusumaa");
+            double ostusmaa = double.Parse(Console.ReadLine());
+            if (ostusmaa >100)
+            {
+                Console.WriteLine("Saad 20% allahindlust!!!!!!!!!!!!!!!!");
+            }
+            else if(ostusmaa < 101 && ostusmaa > 50) 
+            {
+                Console.WriteLine("Saad 10% allagindlust. c: yay");
+            }
+            else if (ostusmaa < 51 && ostusmaa > 20)
+            {
+                Console.WriteLine("5% allahindlust.");
+            }
+            else if (ostusmaa < 21 && ostusmaa > 0)
+            {
+                Console.WriteLine("allahindlust ei saa");
+            }
+            else
+            {
+                Console.WriteLine("sisestatud on vogane arv");
+            }
+            //string kasutajanimi = "";
             //do
             //{
-            //    Console.WriteLine("Palun sisesta oma kasutajanimi: ");
-            //    kasutajaNimi = Console.ReadLine();
-            //} while (kasutajaNimi != "user1");
-            //if (kasutajaNimi == "user1")
+            //    console.writeline("palun sisesta oma kasutajanimi: ");
+            //    kasutajanimi = console.readline();
+            //} while (kasutajanimi != "user1");
+            //if (kasutajanimi == "user1")
             //{
-            //    int ruuduSuurus = 0;
+            //    int ruudusuurus = 0;
 
             //    do
             //    {
-            //        Console.WriteLine("Kui suurt ruutu saada tahab?");
-            //        ruuduSuurus = int.Parse(Console.ReadLine());
-            //    } while (ruuduSuurus < 0 || ruuduSuurus > 20);
+            //        console.writeline("kui suurt ruutu saada tahab?");
+            //        ruudusuurus = int.parse(console.readline());
+            //    } while (ruudusuurus < 0 || ruudusuurus > 20);
 
-            //    char reaKujund = '▒';
-            //    string üksRida = "";
-            //    int tsükliMuutuja = ruuduSuurus;
-
-            //    do
-            //    {
-            //        üksRida = üksRida + "_" + reaKujund;
-            //        tsükliMuutuja = tsükliMuutuja - 1;
-            //    } while (tsükliMuutuja != 0);
-
-            //    tsükliMuutuja = ruuduSuurus;
+            //    char reakujund = '▒';
+            //    string üksrida = "";
+            //    int tsüklimuutuja = ruudusuurus;
 
             //    do
             //    {
-            //        Console.WriteLine(üksRida);
-            //        tsükliMuutuja -= 1;
-            //    } while (tsükliMuutuja != 0);
+            //        üksrida = üksrida + "_" + reakujund;
+            //        tsüklimuutuja = tsüklimuutuja - 1;
+            //    } while (tsüklimuutuja != 0);
 
-            //    Console.WriteLine($"Palun, siin on sinu ruut, suurega {ruuduSuurus}x{ruuduSuurus}");
+            //    tsüklimuutuja = ruudusuurus;
+
+            //    do
+            //    {
+            //        console.writeline(üksrida);
+            //        tsüklimuutuja -= 1;
+            //    } while (tsüklimuutuja != 0);
+
+            //    console.writeline($"palun, siin on sinu ruut, suurega {ruudusuurus}x{ruudusuurus}");
 
             //}
 
             /* tingimuslause osad */
-            if (true) {} // kaistud sõna if kutsub esile tingimuslause, mille tingimus on sulgude vahel, ning millele järgneb koodiplokk tingimuse täitumisel teostatava koodiga
+            if (true) { } // kaistud sõna if kutsub esile tingimuslause, mille tingimus on sulgude vahel, ning millele järgneb koodiplokk tingimuse täitumisel teostatava koodiga
 
-            else if(true) {} // kaistud sõnad "else" ja "if" (else if) kutsuvad esile sekundaarse tingimuslause, mille tingimus on samamoodi sulgude vahel, ning millele pepab ellbena alat kas "if" või teine "else uf". Tingimuse täiumisel ja eelneva tingimuse mittetätumuse, teostakse kodiploki sees olev kood.
+            else if (true) { } // kaistud sõnad "else" ja "if" (else if) kutsuvad esile sekundaarse tingimuslause, mille tingimus on samamoodi sulgude vahel, ning millele pepab ellbena alat kas "if" või teine "else uf". Tingimuse täiumisel ja eelneva tingimuse mittetätumuse, teostakse kodiploki sees olev kood.
 
-            else {} //kaitstud sõna "else" kutsub esile järelitingimuse, mille peab eelnemakas "if" või "else if", ning mille koodiploki sisu täidetakse kõikide teiste "if" ja "else if" tingimuste läbikukkumisel.
+            else { } //kaitstud sõna "else" kutsub esile järelitingimuse, mille peab eelnemakas "if" või "else if", ning mille koodiploki sisu täidetakse kõikide teiste "if" ja "else if" tingimuste läbikukkumisel.
 
             //* Loogilised tehad *//
 
@@ -453,7 +475,7 @@ namespace Minekonspekt
             thing -= 1;     // -= ->võrdusmärk mille ees on miinus, automaatselt lauhtab muutujale maha võrdusmärgi teisel pool oleva arvu.
                             //       asendab tehet "thing = tháng - 1". on kombinatsioon matemaatilisest tehtest "-" ja omistamisest "=".
             thing *= 2;     // *= -> võrdusmärk mille ees on korrutusmärk "*", automaatselt korrutab muutuja sisu, võrdusmärgi teisel pool oleva arvu kordi.asendab tehet "thing = thing * 2".on kombinatsioon matemaatilisest tehtest "*" ja omistamisest "=".
-            thing /= 2:     ///= -> võrdusmärk mille ees on jagamismärk "/", automaatselt jagab muutuja sisu võrdusmärgi teisel pool oleva arvu osadeks. asendab tehet "thing = thing / 2".on kombinatsioon matemaatilisest tehtest "/" ja omistamisest "=".
+            thing /= 2;     // = -> võrdusmärk mille ees on jagamismärk "/", automaatselt jagab muutuja sisu võrdusmärgi teisel pool oleva arvu osadeks. asendab tehet "thing = thing / 2".on kombinatsioon matemaatilisest tehtest "/" ja omistamisest "=".
             thing++;        // ++ -> on spetsiifiliselt ühe juurde liitmiseks kiirtehe.
             thing--;        // -- -> on spetsiifiliselt ühe maha lahutamiseks kiirtehe.    
 
