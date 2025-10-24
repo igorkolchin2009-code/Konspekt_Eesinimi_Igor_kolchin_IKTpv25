@@ -447,6 +447,29 @@ namespace Minekonspekt
 
             else { } //kaitstud sõna "else" kutsub esile järelitingimuse, mille peab eelnemakas "if" või "else if", ning mille koodiploki sisu täidetakse kõikide teiste "if" ja "else if" tingimuste läbikukkumisel.
 
+            int option = 3; //----
+
+            switch (option) //"switch on kaitsud sõna altetnaatiivse tingimuskontrolli jaoks mida saab ef else-if asemel kasutada. Sulgude vahel käib muutuja nime, mille põhjal tingimuslik ümberlülitus toimub, Siin sulgede vahel ei ole tingimus ise, vaid kõigest kontrollitav muutuja, või omakorda sulgude vahel muu tingimus. pärast lülitusvalikut tuleb koodiplikk.
+            {
+                case 1: //koodiploki sees on erinevad juhtumid, juhtumit sätestatakse kaitsud sõna "case" abil. antud juhul kontrollitakse,
+                        //kas muutujas "option" on väärtus 1, millele järgned koolon":" väljendades tingimuse täitumisel tehtava
+                        //kooditegevuse algust
+                    break;
+                //Kui tegevis on tehtud, väljutakse mitte ainult juhtumist vaid kogu käesoleva case-tingimusikust kaistud sõnaga "break". peale breaki on läuselõpumärk ";".
+                case 2:
+                    //Juhtumeid võib olla mitmeid, antud juhul on neid kolm kindlalt.
+                    break;
+                case 3:
+                    Console.WriteLine(option); //tehtav kooditegevus.
+                    break;
+                default:    //Default juhtumit täidetakse siis, kui ülejäänud juhtumid ei kirjelda muutujas "option" olevat seisu.
+                    break;  // ka defailt lõppeb sõnaga break.
+            }
+
+            /* sõne tööriistab ja muud tekstiga seotut */
+            string alfa = "a\nb";           // \n -> tekitab ühe sõne sisse reamurde, sõne kus on sees üks "\n", omab kahte rida.
+            string beta = $"a {alfa} b";    // $  -> lubab kasutade muutjaid loogeliste sulgudega otse teksti sees. On vatiant formateeritud stringist.
+            
             //* Loogilised tehad *//
 
             // & -> "and" loogiline teha, mida kasutatakse tingimuste kirjeldamisel, ning mis annab positiibse vastuse (true) juhul kui mõlemaö poll "&&" märki olevad tingimuste on täidetud. Kui üks neist ei ole, siis abbab negatiivse vastuse (false).
@@ -481,10 +504,19 @@ namespace Minekonspekt
 
             /* Tsüklid */
             // 1. do-while
+            int dew = 0;
             do // "do" on kaitstud sõna, mis do-while tsüklit. Pärast seda on kodiplokk {} ning ütleb et seda koodi
             {
+                dew++;
+            } while (dew !=5); //niikaua kuni while järel olevate sulgude vahel tingimus ei täitu, käivitatakse eelnev kood uuesti.
 
-            } while (true); //niikaua kuni while järel olevate sulgude vahel tingimus ei täitu, käivitatakse eelnev kood uuesti.
+            // 2. while
+            int i = 1;      //tsüklimuutuja mis aitab järge pidada while tsükli toimisel
+            while (i < 5)   //"while" on kaitstud sõna mis alustab while tsükli varianti, ilma "do"-ta, ning vajab alati välist tsüklimuutujat. antud juhul on selleks i. Tsükli tingimus, mis peale "while" sõna on, asub sulgude vahel, siin kontrollitaksegi tsükli tööd, läbi kindla tingimuse kasutades tsüklimuutujat. antud juhul tsükkel töötab niikaua, kuni i on väiksem kui 5. kui i on sama suur nagu 5, siis tsükkel katkeb.
+            {
+                //koodiplokk kus midagi tehakse
+                i++;        //ning seejärel muudetakse tsüklimuutuja "i" olekut. antud juhul liidetakse 1 juurde kiirtehtega "++".
+            }
         }
 
 
