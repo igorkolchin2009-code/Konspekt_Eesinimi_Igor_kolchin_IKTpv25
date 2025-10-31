@@ -176,7 +176,7 @@ namespace Minekonspekt
             //}
             //Console.WriteLine("Värv muudetud!");
 
-            
+
             //# Калькулятор грузчика - Напишите программу, которая:
             //# - Спрашивает пользователя, хочет ли он измерить картонную коробку или бочку для масла.
             //# - в зависимости от ввода пользователя, спрашивает:
@@ -269,6 +269,31 @@ namespace Minekonspekt
             //var x = "aba";  // var on ebamäärase andmetüübiga kohalik muutuja
             //var y = 123;    // ta bõib omada endas teisi andmetüüpe
             //const int z = 9; // konstant-tüüpi muutujaid ei saa muuta, nende sisu on read-only
+
+            /* Võimalikud komposiitandmetüübid */
+            // 1. massiiv:
+            // [] -> Massiiv on kompossitandmetüüp, mille sees olla mitmeid samat tüüpi lihtandmeid. Massiivi tähistatakse Kantsulgudega.
+            //
+            //
+            //      Massive saab olla ükskõik millist lihtandmetüüpi massiive.
+            //      Massiivi tekitamisel tuleb ära õelda kui pikk või kui suur see massiiv on.
+            //      Massiiv ei pea olema koostatud ainult Lihtandmetüüpidest, vaid massiive saab olla ka tehtud teistest komposiitandmetüüpidest
+            //      Sealhulgas massiiv ise.
+            // Esimene tekitusviis:
+            int[] arvuMassiv = new int[3];  // andmetüüp int väljendab et tegu täisarvutüüpi andmega ja kantsuled väljendava et ühtlasi on
+                                            // tegu ka massiiviga.muutuja nimeks on "arvuMassiiv" ja võrdusmärgi abil on omistatud muutujasse
+                                            // uus tühi massiiv kasutades kaitstud sõna "new", millele järgneb selle massiivi andmetüübi ja
+                                            // pikkuse sätestus "int [3]". See täghendab et siin massiivis on 3 elementi, mis on täisarvud.
+            // Teine tekitusviis:
+            int[] arvuMassiiv2 = [1,2,3];   // teine massivi tektitusviis kus järjendi pikkuse sätestamise aemel, pannakse elemendid kohe 
+                                            // järjendit omava muutuja sisse, järjendi pikkust sätestama ei pea, kuna pikkuse tuletab kompilaator
+                                            //sinna sisse pandud elementide koguse järgi.
+            
+            // -- massivi sisemised meetodid:
+            int hasThisMany = arvuMassiv.Length;    // massiivi meetod "Length" mille me saame kasutusele võtta punkti abil, loendab kokku 
+                                                    // mitu elementi, adresseeritav massiiv omab, omistatakse ainult järjendi pikkus, mitte
+                                                    // järjendi sees olevaid elemente.
+
 
             ////põhilised matemaatilised tehted
             //int liitmine = 1 + 1; // liitmine, kaks arvu liidetakse kokku
@@ -517,9 +542,20 @@ namespace Minekonspekt
                 //koodiplokk kus midagi tehakse
                 i++;        //ning seejärel muudetakse tsüklimuutuja "i" olekut. antud juhul liidetakse 1 juurde kiirtehtega "++".
             }
+            //3. For
+            int kogus = 6;  // muutuja mida tsükkel kasutab oma töö tegemiseks - teisisönu, töödeldav materjal
+            for (int k = 0; k < kogus; k++) //  kaitstud sõnaa "for" alustab for-tsüklit, pärast mida on sulud, mille vahel on kõik tsükli
+                                            //  töö jaoks vajalik olemas. Esimene parameeter, tekitab tsükli töö jaoks kohaliku muutuja
+                                            //  "int k = 0;" mida tsükli ENDA töö juhtimiseks.Teine parameeter on tingimuslause, mis kontrollib
+                                            //  tingimuse täitumist "k < kogus;" ning mille täitumisel tsükli töö jätkub, aga mille
+                                            //  mitte-täitumisel tsükkel katkeb. Kolmas parameeter on tsüklimuutuja inkrementeerimine kiirtehtega
+                                            // "k++". Pane tähele, et iga sulgude vahel oleva osa järel (välja arvatud viimase) on
+                                            // lauselõpumärk. Tsükli tööd kontrolliv tingimuslause koosneb kolmest reast, mitte ühest
+                                            // nagu "while" või "do-while" puhul.
+            {                               // sulgudele järgneb, loogeliste sulgude vahel ole koodiplook {}
+                Console.WriteLine(k);       //täätlustegevus tsükli sees. on muutuja "k" hetkearvu väljakuvamine.
+            }
         }
-
-
     } 
 }
 
