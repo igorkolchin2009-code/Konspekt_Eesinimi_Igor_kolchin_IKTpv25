@@ -335,8 +335,40 @@ namespace Minekonspekt
             //int lahutamine = 1 - 1; // lahutamine, kus esimeset arvust lahutatakse maha teine
             //double korrutamine = 1 * 2; // kottutanine, kus teine arv korrutatakse esimese arvu kordi.
             //double jagamine = 1 / 2; //jagamine. esimene arv jagatakse teise arvuga.
-            //double astendamine = Math.Pow(2, 2); // astendamine, esimene arv astendatakse teisega
-            //double juurimine = Math.Sqrt(2); // ruutjuur, parammetrina juuritav arv
+            
+            //Matmaatilised tehted modulist "math"
+            double astendamine = Math.Pow(2, 2); // astendamine, esimene arv astendatakse teisega
+            double juurimine = Math.Sqrt(2); // ruutjuur, parammetrina juuritav arv
+            double newD = 4,000001d
+            Math.Round(newD);   //Modulist "Math" kutsutakse esile punkti abil meetod "Round", sulgude vahel on esimese parameetrina
+                                //ümardatav arv, teise parameetrina komakohtade arv. Roude ümardeb sylgude vahel oleva arvväärtuse
+                                //teise paraneetris oleva komakhtadeni. Kui komakohti ei ole seatud, ümaratakse lähima täisarvuni.
+                                //0-4 ümardatakse allpoole, 5-9 ümardatakse ülespoole.
+            double newPi = Math.PI; //Moodulist "Math" kutasutakse pubkti abil esile kaistud väärtus, PI , mis väljendab mate
+                                    //maatilist pi-d ja seda saab kasutada nagu tavaline arv.
+
+            //Castimine, ahk arvu teisendus ühest andmetüübist teise
+
+            //Castimine on viis, kuidas ühest andmetüübist teise saad, Castimist ennnast on kahte eri liik - Automaatne ja
+            //manuaalne. Automaatne castimine toimub siis, kui teisendatakse väikesenast andnetüübist suutemasse, aha manuaalselt
+            //on vaja castida siis, kui ütitame suurenast abdnetüübist väiksemat saada. Manuaalne castimine käib nii, et
+            //sihtmuutuja võrdusmärhu taga oleva muutuja nimetuse erre, pabbakse sulgudes siivitava andmeetüübi nimetus.
+
+
+            //Manuaalne Castimine
+            double newData1 = 1.23d; //tekitame, või on kuskil olemas, suure mahuga andmed muutujas "newData1" kus on tegu doble
+                                     //andmetüübiga
+            float data1float = (float)newData1; //"(flout)" teisendab double tüüpi andmed float tüüpi andmetaks.
+            long data1Lond = (long)newData1; //"(long)" teisendab double tüüpi andmed float tüüüpi andmetaks.
+            int data1Int = (int)newData1; // "(int)" teisendab doble tüüpi andmed täosatvu andmetaks tüüpi andmetaks.
+            char data1Char = (char)newData1; //"(char)" teisendab double tüüpi andmed char tüüpi andmeteks.
+
+            //Automaatne Castimine
+            int backToInt = data1Char;//char andmetüübist, suuremasse, int tüüpi andmeteks muutmisel ei ole vaja muutuja ette casti panna
+            long backToLong backToInt; //int andmetüübist suuremasse, long tüüpi andmeteks teisendamisel, casti panna ei ole vaja
+            float backToFloat = backToLong; //long andmetüübist suuremasse, float tüüpi andmeteks teisendamisel, casti panna ei ole vaja
+            double backToDouble backToFloat; //float andmetüübist suuremasse, double tüüpi andmeteks teisendamisel, casti panna ei ole vaja
+
 
             ////muutuja nimed
             //int arv = 0;
