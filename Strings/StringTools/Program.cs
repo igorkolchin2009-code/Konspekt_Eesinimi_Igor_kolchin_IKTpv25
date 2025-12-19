@@ -38,9 +38,10 @@
             //Console.WriteLine(üksSõna[13]);
             //Console.WriteLine(üksSõna.IndexOf("l"));
 
-            Console.WriteLine(" \" ");
-            Console.WriteLine("a \n b");
-            Console.WriteLine("AAAA\tBBBB");
+            //Console.WriteLine(" \" ");
+            //Console.WriteLine("a \n b");
+            //Console.WriteLine("AAAA\tBBBB");
+
         }
     }
 }
