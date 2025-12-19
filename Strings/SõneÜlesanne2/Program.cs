@@ -5,8 +5,8 @@
         static void Main(string[] args)
         {
             List<List<string>> kasutajad = new List<List<string>>();
-            kasutajad.Add(new List<string>(){ "usre1", "pasword1"});
-            kasutajad.Add(new List<string>(){ "usre2", "pasword2"});
+            kasutajad.Add(new List<string>(){ "user1", "pasword1"});
+            kasutajad.Add(new List<string>(){ "user2", "pasword2"});
 
             string kasutajanimi = "";
             Console.WriteLine("palun sisesta oma kasutajanimi");
@@ -35,7 +35,6 @@
                 {
                     Console.WriteLine("kasutja ei eksisteeri");
                 }
-                //Console.WriteLine(user.ToString()+", " +user[0] +", "+user[1]+ "");
             }
         }
     }
